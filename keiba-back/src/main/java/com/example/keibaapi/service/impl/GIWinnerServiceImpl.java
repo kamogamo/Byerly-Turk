@@ -22,10 +22,4 @@ public class GIWinnerServiceImpl implements GIWinnerService {
     public List<GIWinnerEntity> findResult() {
         return giWinnerMapper.findResult();
     }
-
-    @Override
-    @Transactional
-    public void insert(GIWinnerEntity giWinner) {
-        giWinnerMapper.insert(giWinner);
-    }
 }

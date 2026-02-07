@@ -6,6 +6,4 @@ import java.util.List;
 
 public interface GIWinnerService {
     List<GIWinnerEntity> findResult();
-    void insert(GIWinnerEntity giWinner);
-
 }

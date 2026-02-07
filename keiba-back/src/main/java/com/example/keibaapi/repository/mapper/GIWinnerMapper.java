@@ -7,5 +7,4 @@ import java.util.List;
 @Mapper
 public interface GIWinnerMapper {
     List<GIWinnerEntity> findResult();
-    void insert(GIWinnerEntity giWinner);
 }
