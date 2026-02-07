@@ -11,7 +11,7 @@ services:
     volumes:
       - pg-data:/var/lib/postgresql/data
       - ./sql/00_schema.sql:/docker-entrypoint-initdb.d/00_schema.sql:ro
-      - ./sql/01_gi_winner.sql:/docker-entrypoint-initdb.d/01_gi_winner.sql:ro
+      - ./sql/01_GI_winner.sql:/docker-entrypoint-initdb.d/01_GI_winner.sql:ro
       - ./sql/02_sire_line_data.sql:/docker-entrypoint-initdb.d/02_sire_line_data.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U yutaka -d keibadb || exit 1"]
