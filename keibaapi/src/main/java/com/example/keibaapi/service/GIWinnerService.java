@@ -1,11 +1,11 @@
 package com.example.keibaapi.service;
 
-import com.example.keibaapi.repository.entity.GIWinner;
+import com.example.keibaapi.repository.entity.GIWinnerEntity;
 
 import java.util.List;
 
 public interface GIWinnerService {
-    List<GIWinner> findResult();
-    void insert(GIWinner giWinner);
+    List<GIWinnerEntity> findResult();
+    void insert(GIWinnerEntity giWinner);
 
 }

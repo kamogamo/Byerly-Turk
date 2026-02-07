@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.example.keibaapi.repository.mapper.GIWinnerMapper">
-    <select id="findGIWinner" resultType="com.example.keibaapi.repository.entity.GIWinner">
+    <select id="findResult" resultType="com.example.keibaapi.repository.entity.GIWinnerEntity">
         SELECT  year,
                 race,
                 winner

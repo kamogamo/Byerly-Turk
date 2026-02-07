@@ -4,5 +4,4 @@
     <artifactId>postgresql</artifactId>
     <version>42.7.4</version>
 </dependency>
-
 <!-- もし入っていれば MySQL Connector は削除 -->

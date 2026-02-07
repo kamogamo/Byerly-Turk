@@ -1,6 +1,6 @@
 package com.example.keibaapi.web.rest;
 
-import com.example.keibaapi.repository.entity.GIWinner;
+import com.example.keibaapi.repository.entity.GIWinnerEntity;
 import com.example.keibaapi.service.GIWinnerService;
 import com.example.keibaapi.web.response.GIWinnerResponse;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,10 +20,8 @@ public class GIWinnerRestController {
 
     @GetMapping
     public List<GIWinnerResponse> findResult(){
-        List<GIWinner> giWinner = giWinnerService.findResult();
+        List<GIWinnerEntity> giWinner = giWinnerService.findResult();
         return giWinner.stream()
                 .map(GIWinnerResponse::from).toList();
     }
-
-
 }

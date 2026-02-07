@@ -1,6 +1,6 @@
 package com.example.keibaapi.service.impl;
 
-import com.example.keibaapi.repository.entity.GIWinner;
+import com.example.keibaapi.repository.entity.GIWinnerEntity;
 import com.example.keibaapi.repository.mapper.GIWinnerMapper;
 import com.example.keibaapi.service.GIWinnerService;
 import org.springframework.stereotype.Service;
@@ -19,13 +19,13 @@ public class GIWinnerServiceImpl implements GIWinnerService {
 
     @Override
     @Transactional
-    public List<GIWinner> findResult() {
+    public List<GIWinnerEntity> findResult() {
         return giWinnerMapper.findResult();
     }
 
     @Override
     @Transactional
-    public void insert(GIWinner giWinner) {
+    public void insert(GIWinnerEntity giWinner) {
         giWinnerMapper.insert(giWinner);
     }
 }
